@@ -15,7 +15,7 @@ header {
 .footer-logo {
   object-fit: contain;
   object-position: right center;
-  max-width: 112px;
+  max-width: 80px;
 }
 
 li {
@@ -41,5 +41,11 @@ footer {
   padding: 10px 10px 10px 0px;
   color: #fff;
   background-image:url('https://assets-us-01.kc-usercontent.com:443/1edcf8ca-f650-0075-67cf-7b089bed18e8/93acb25c-3cff-4ce2-ac06-e1bd3894ad98/footer-bg.png');
+}
+
+@media (min-width: 992px) {
+  .footer-logo {
+    max-width: 112px;
+  }
 }
 

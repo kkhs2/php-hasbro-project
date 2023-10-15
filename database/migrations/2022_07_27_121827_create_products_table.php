@@ -18,8 +18,9 @@ return new class extends Migration
             $table->string('sku')->nullable(false);
             $table->string('name')->nullable(false);
             $table->integer('stock')->nullable(false);
+            $table->string('token');
             $table->decimal('price', 10, 2)->nullable(false);
-            $table->timestamp('created_at')->useCurrent();
+            $table->timestamps();
         });
     }
 
