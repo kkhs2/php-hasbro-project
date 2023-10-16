@@ -16,8 +16,9 @@ return new class extends Migration
         Schema::create('currencies', function (Blueprint $table) {
             $table->id()->autoIncrement();
             $table->string('country')->nullable(false);
+            $table->string('token');
             $table->decimal('conversion', 10, 2)->nullable(false);
-            $table->timestamp('created_at')->useCurrent();
+            $table->timestamps();
         });
     }
 
